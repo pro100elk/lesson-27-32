@@ -1,0 +1,45 @@
+.ramka{
+margin: 5%;
+background-color: #999;
+position: relative;
+}
+.block{
+  width: 10vw;
+  height: 10vw;
+  background-color: rgba(172, 255, 47, 0.575);
+  position: relative;
+}
+
+.block{
+  animation-name: position, color, radius ;
+  animation-duration: 2s, 2s, 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s, 2s, 2s;
+}
+
+@keyframes color{
+  50%{ background-color: red;}
+  100%{background-color: blueviolet;}
+}
+@keyframes radius{
+  50%{border-radius: 50%;}
+  100%{border-radius: 0%;}
+}
+@keyframes position{
+  0%{left:0}
+  100%{left: calc(100% - 10vw);}
+}
+
+.block:hover{
+animation-play-state: paused;
+}
+.text{
+  animation: color__text 1s linear -.5s infinite alternate none;
+}
+
+@keyframes color__text {
+  0%{color: #333;}
+  100%{color: red;}
+}

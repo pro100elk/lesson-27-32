@@ -1,0 +1,28 @@
+.fb{
+  border: 10px solid red;
+  height: 400px;
+  width: 800px;
+  margin: 10vw;
+  background-color: rgba(223, 115, 115, 0.699);
+
+}
+.fb__el{
+  border: 2px solid green;
+}
+.fb__el-text{
+  background-color: yellowgreen;
+  text-align: center;
+  font-size: 5vw;
+  padding: 20%;
+}
+
+.fb{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.fb__el{
+  flex: 1 1 100px;
+}

@@ -1,0 +1,53 @@
+body{
+  background-color: #188;
+  font-size: 2em;
+}
+
+.text{
+  border: 1px solid #89ff99;
+  padding: 25px;
+  margin: 25px;
+}
+
+.menu{
+  margin: 10vw;
+  display: inline-grid;
+  grid-template: repeat(2, 1fr)/repeat(5, 1fr) ;
+  grid-auto-flow: row;
+  transition: all .5s;
+}
+.menu__el{
+  text-align: center;
+  border: 1px solid #f6ff73;
+  padding: 60px;
+  transition: all .2s;
+  justify-content: start;
+  align-content: start;
+}
+
+.menu__el:hover{  
+  border-radius: 15px;
+  background-color: #185;
+  border-width: 2px;
+}
+
+.menu:hover{
+  box-shadow: 0 0 40px red;
+  padding: 5px;
+  grid-gap: 5px;
+  border-radius: 15px;
+}
+.menu__el-1:hover{
+  color: red;
+}
+
+.menu__el:focus{
+  background-color: #851;
+}
+.menu__el-1:focus{
+color: red;
+}
+.menu__el:first-child{
+border: 1px ridge green;
+}
+
